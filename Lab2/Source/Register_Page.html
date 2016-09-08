@@ -1,0 +1,47 @@
+<!-- Created by Ankita on 9/4/16 -->
+
+
+<!--Adding bootstrap and styles.css-->
+<!DOCTYPE html>
+<html >
+<head>
+    <meta charset="UTF-8">
+    <title>This is Ankita's Register Page</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/bootstrap.css" rel="stylesheet" media="screen">
+    <link href="css/style.css" rel="stylesheet">
+
+    <!--This file will store the user Information in Local storage-->
+    <script src="js/Info.js"></script>
+
+
+
+
+    <link rel='stylesheet prefetch' href='http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/themes/smoothness/jquery-ui.css'>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <!--User Registration Page-->
+
+</head>
+
+<body>
+<div class="container">
+
+    <form class="form-signin">
+        <h2 class="form-signin-heading">Register Page</h2><p></p>
+        <input type="text" class="input-block-level" placeholder="First Name" id="fname"><p></p>
+        <input type="text" class="input-block-level" placeholder="Last Name" id="lname"><p></p>
+        <input type="email" class="input-block-level" placeholder="Email Address" id="email"><p></p>
+        <input type="password" class="input-block-level" placeholder="Password" id="password"><p></p>
+        <a href="Login_Page.html" class="btn btn-large btn-primary" onclick="store(); window.alert('Sucessfully Register');">Register</a>
+        <a href="Login_Page.html" class="btn btn-large btn-primary btn-danger">Cancel</a>
+    </form>
+</div>
+</body>
+</html>
+
+
+
+
