@@ -96,7 +96,7 @@
                         }
 
                     });
-                    var startLocationUrl="https://api.wunderground.com/api/81c5ab4040ab0441/conditions/q/"+start+".json";
+                    var startLocationUrl="https://api.wunderground.com/api/81c5ab4040ab0441/conditions/q/"+"start"+".json";
                     console.log(startLocationUrl);
                     $http.get(startLocationUrl).success(function(data1){
                         console.log("Start Weather")
@@ -104,7 +104,7 @@
                         $scope.StartWeather = data1.current_observation.temp_f;
 
                     });
-                    var endLocationUrl="https://api.wunderground.com/api/81c5ab4040ab0441/conditions/q/"+end+".json";
+                    var endLocationUrl="https://api.wunderground.com/api/81c5ab4040ab0441/conditions/q/"+"end"+".json";
                     console.log(endLocationUrl);
                     $http.get(endLocationUrl).success(function(data2){
                         console.log("End Weather")
