@@ -96,7 +96,7 @@
                         }
 
                     });
-                    var startLocationUrl="https://api.wunderground.com/api/36b799dc821d5836/conditions/q/"+start+".json";
+                    var startLocationUrl="https://api.wunderground.com/api/81c5ab4040ab0441/conditions/q/"+start+".json";
                     console.log(startLocationUrl);
                     $http.get(startLocationUrl).success(function(data1){
                         console.log("Start Weather")
@@ -104,7 +104,7 @@
                         $scope.StartWeather = data1.current_observation.temp_f;
 
                     });
-                    var endLocationUrl="https://api.wunderground.com/api/36b799dc821d5836/conditions/q/"+end+".json";
+                    var endLocationUrl="https://api.wunderground.com/api/81c5ab4040ab0441/conditions/q/"+end+".json";
                     console.log(endLocationUrl);
                     $http.get(endLocationUrl).success(function(data2){
                         console.log("End Weather")
@@ -122,7 +122,7 @@
 
 </script>
 
-<!--<script>
+<script>
 
 
     angular.module('weather', [])
@@ -132,7 +132,7 @@
                     //var b1='IL';
                     var a1=document.getElementById('start1').value;
                     var b1=document.getElementById('start2').value;
-                    $http.get('https://api.wunderground.com/api/e236e7dacdfc7b9b/conditions/q/'+b1+'/'+a1+'.json')
+                    $http.get('https://api.wunderground.com/api/81c5ab4040ab0441/conditions/q/'+b1+'/'+a1+'.json')
 
                             .success(function(data)
                             {
@@ -151,7 +151,7 @@
                             })
                     var a2=document.getElementById('end1').value;
                     var b2=document.getElementById('end2').value;
-                    $http.get('https://api.wunderground.com/api/36b799dc821d5836/conditions/q/'+b2+'/'+a2+'.json')
+                    $http.get('https://api.wunderground.com/api/81c5ab4040ab0441/conditions/q/'+b2+'/'+a2+'.json')
 
                             .success(function(data)
                             {
