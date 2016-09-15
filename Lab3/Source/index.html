@@ -1,0 +1,103 @@
+
+<!--Created by Ankita 9/11/16-->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Ankita's Mash up</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+    <link rel='icon' type='image/png' href='https://s3.amazonaws.com/alchemyapi/img/favicon.png' />
+    <link rel="stylesheet" href="css/reset.css" media="screen">
+    <link rel="stylesheet" href="css/style.css" media="screen">
+    <script src='https://code.responsivevoice.org/responsivevoice.js'></script>
+    <script src="js/TextToVoice.js"></script>
+</head>
+
+<body>
+
+    <header>
+        <div class='container'>
+            
+            <div class='page-header'>
+                <h4>INTRODUCING THE APPLICATION THAT CAN EXTRACT POSITIVE/NEGATIVE SENTIMENT</h4>
+
+                <h1 id="logo">+/-</h1>
+
+            </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <div id="info">
+
+
+                <p id="info_start">Speak up..... I'm ,Listening</p>
+                <p id="info_speak_now">Speak now.</p>
+                <p id="info_no_speech">No speech was detected. You may need to adjust your
+                    <a href="//support.google.com/chrome/bin/answer.py?hl=en&amp;answer=1407892">
+                        microphone settings</a>.</p>
+                <p id="info_no_microphone" style="display:none">
+                    No microphone was found. Ensure that a microphone is installed and that
+                    <a href="//support.google.com/chrome/bin/answer.py?hl=en&amp;answer=1407892">
+                        microphone settings</a> are configured correctly.</p>
+                <p id="info_allow">Click the "Allow" button above to enable your microphone.</p>
+                <p id="info_denied">Permission to use microphone was denied.</p>
+                <p id="info_blocked">Permission to use microphone is blocked. To change,
+                    go to chrome://settings/contentExceptions#media-stream</p>
+                <p id="info_upgrade">Web Speech API is not supported by this browser.
+                    Upgrade to <a href="//www.google.com/chrome">Chrome</a>
+                    version 25 or later.</p>
+            </div>
+            <div class="right">
+                <button id="start_button" onclick="startButton(event)">
+                    <img id="start_img" src="img/mic.png" alt="Start" height="190" width="220">
+                </button>
+            </div>
+            <div id="results">
+                <span id="final_span" class="final"></span>
+                <span id="interim_span" class="interim"></span>
+                <p>
+            </div>
+            <div class="left">
+                <div class="sidebyside" style="text-align:right">
+                    <button id="copy_button" class="button" onclick="repeatButton()">
+                        Repeat what you just said</button>
+                    <div id="copy_info" class="info">
+                        Press Ctrl+C to copy text & paste in below text box<br>
+                    </div>
+                </div>
+
+                <p>
+                <div id="div_language">
+                    <select id="select_language" onchange="updateCountry()"></select>
+                    &nbsp;&nbsp;
+                    <select id="select_dialect"></select>
+                </div>
+            </div>
+
+            <p align="center"> . </p>
+            <textarea id='userInput' placeholder="Paste text to run through sentiment alchemyAPI..."></textarea>
+
+            <p align="center">OR</p>
+            <textarea id='urlInput' placeholder="Paste URL of the webpage you want evaluated here for ex: http://www.bbc.com/news/health-37362341"></textarea>
+            <input type="submit" id="submitButton" value='Check it!'>
+        </div>
+
+        
+        <div class="response">
+        </div>
+
+    </main>
+
+
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.2.js"></script>
+    <script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+
+    <script src="js/main.js"></script>
+    <script src="js/VoiceToText.js"></script>
+
+</body>
+
+</html>

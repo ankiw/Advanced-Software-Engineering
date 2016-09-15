@@ -1,0 +1,232 @@
+body {
+    background:url('http://cdn.cio.com.au/article/images/740x500/dimg/dreamstime_s_30534441.jpg');
+    font-family: 'Comic Sans MS', "Times New Roman";
+    text-align: center;
+    font-size: 100%;
+    line-height: normal;
+}
+
+header {
+    background-color: greenyellow;
+}
+
+h1 {
+    font-size: 10em;
+}
+
+
+
+@media (min-width: 500px) {
+    #logo {
+        font-size: 20em;
+        line-height: .8em;
+        padding-bottom: 45px;
+        color: white;
+        font-weight: 900;
+    }
+}
+
+@media (max-width: 499px) {
+    #logo {
+        font-size: 13em;
+    }
+}
+
+@media (max-width: 400px) {
+    #logo {
+        font-size: 50em;
+    }
+}
+
+h2 {
+    font-size: 1.5em;
+    color: black;
+}
+
+h3 {
+    line-height: 1.5em;
+}
+
+h4 {
+    font-weight: 100;
+    line-height: 1.4em;
+    color: #4b4b4b;
+    /*    color: #00ffb8;*/
+    
+    letter-spacing: 2.5px;
+    padding-bottom: 15px;
+}
+
+p#footer {
+    font-size: .89em;
+    line-height: 1.25em;
+}
+
+#warning {
+    font-family: "helvetica";
+    font-weight: 100;
+    line-height: 1.5em;
+    padding-top: 55px;
+    font-size: medium;
+    color: #a7a7a7;
+}
+
+a {
+    /*  color: #00B7FF;*/
+    
+    color: #00ffb8;
+}
+
+}
+
+.result {
+    max-width: 85%;
+    padding: 100px 75px 0 75px;
+}
+
+@media (max-width: 400px) {
+    .result {
+        max-width: 85%;
+        padding: 100px 35px 0 35px;
+    }
+}
+
+footer .container {
+    max-width: 85%;
+    padding: 100px 75px 55px 75px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media (max-width: 400px) {
+    footer .container {
+        max-width: 85%;
+        padding: 100px 35px 55px 35px;
+    }
+}
+
+header .container {
+    max-width: 85%;
+    padding: 70px 75px 0 75px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media (max-width: 400px) {
+    header .container {
+        max-width: 85%;
+        padding: 70px 35px 0 35px;
+    }
+}
+
+main .container {
+    max-width: 85%;
+    padding: 65px 75px 75px 75px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media (max-width: 400px) {
+    main .container {
+        max-width: 85%;
+        padding: 70px 35px 75px 35px;
+    }
+}
+
+#refreshButton {
+    margin: 100px 75px 0 100px;
+}
+
+main .response {
+    max-width: 85%;
+    padding: 0 75px 0 75px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media (max-width: 400px) {
+    main .response {
+        max-width: 85%;
+        padding: 0 35px 0 35px;
+    }
+}
+
+#negResponse {
+    max-width: 85%;
+    padding: 100px 100px 0 0;
+    color: red;
+}
+
+#slightNegResponse {
+    max-width: 85%;
+    padding: 100px 100px 0 0;
+    color: #ff8000;
+}
+
+#neutralResponse {
+    max-width: 85%;
+    padding: 100px 100px 0 0;
+    color: #00B7FF;
+}
+
+#posResponse {
+    max-width: 85%;
+    padding: 100px 100px 0 0;
+    color: #00ffb8;
+}
+
+#userInput {
+    height: 150px;
+    width: 90%;
+    background: #ededed;
+    color: #2a2a2a;
+    border: none;
+    padding: 15px;
+    font-size: 16px;
+    font-weight: 100;
+    outline: none;
+}
+
+#urlInput {
+    margin-top: 10px;
+    height: 20px;
+    width: 90%;
+    background: #ededed;
+    color: #646464;
+    border: none;
+    padding: 15px;
+    font-size: 16px;
+    font-weight: 100;
+    outline: none;
+}
+
+input[type=submit] {
+    margin-top: 20px;
+    border: 3px solid #000000;
+    color: #fff;
+    background: #000000;
+    padding: 10px 40px;
+    border-radius: 25px;
+    font-size: 16px;
+}
+
+input[type=submit]:hover {
+    border: 3px solid #000000;
+    color: #000000;
+    background: #fff;
+}
+
+.moreInfo {
+    float: right;
+    font-size: medium;
+    padding: 15px;
+    text-decoration: none;
+}
+
+.addthis_button {}
+
+a.addthis_button {
+    text-decoration: none;
+    outline: none;
+    border: 0;
+}
