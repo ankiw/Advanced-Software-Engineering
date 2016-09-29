@@ -22,6 +22,7 @@ angular.module('app', ['ionic', 'app.controllers', 'app.routes', 'app.directives
   });
 })
 
+
 .config(function($stateProvider) {
   $stateProvider
 
@@ -32,7 +33,16 @@ angular.module('app', ['ionic', 'app.controllers', 'app.routes', 'app.directives
       
 
   })
-   .state('loginPage', {
+  
+  .state('map', {
+      url: '/map',
+      templateUrl: 'templates/map.html',
+      controller:'AccountCtrl'
+      
+
+  })
+  
+  .state('loginPage', {
       url: '/login',
       templateUrl: 'templates/login.html',
       controller: 'loginCtrl'
