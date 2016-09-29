@@ -1,0 +1,66 @@
+<ion-view title="Welcome User" id="home" style="background-color:#A7AFA5;">
+      <ion-pane>
+      <ion-content ng-controller="RedditCtrl">
+          
+          
+          
+          
+          
+          
+          
+          <button class="button icon icon-left ion-home">
+            HOME
+          </button>
+          
+          
+          
+       
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+     <ion-header-bar class="item item-input item-select item-energized">
+        <h1 class="title">My Reddit Television App</h1>
+      </ion-header-bar>
+          <ion-refresher
+            pulling-text="Pull to refresh..."
+            on-refresh="loadNewerStories()">
+          </ion-refresher>
+          <div class="list">
+          <a class="item item-thumbnail-left" 
+             href="{{story.url}}" target="_blank"
+             ng-repeat="story in stories track by story.id">
+              <img ng-src="{{story.thumbnail}}"
+                   ng-if="story.thumbnail.startsWith('http')">
+              <h2 class="story-title">{{story.title}}</h2>
+               <p>{{story.domain}}</p>
+          </a>
+              </div>
+           <ion-infinite-scroll on-infinite="loadOlderStories()" distance="1%">
+         </ion-infinite-scroll>
+          
+          
+      </ion-content>
+    </ion-pane>
+  </ion-view>
+  

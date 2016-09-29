@@ -1,0 +1,22 @@
+<ion-view title="Login" id="page1" style="background-color:#A7AFA5;">
+    <ion-content padding="true" class="has-header">
+        <h1 id="login-heading3" style="color:#000000;">My Television App</h1>
+        <form id="login-form1" class="list">
+            
+              <label class="item item-input">
+                  <input type="text" id="username" class="form-control" placeholder="Username" required autofocus ng-model="data.uname">
+              </label>
+            
+             <label class="item item-input">
+                 <input type="password" id="password" class="form-control" placeholder="Password" required autofocus ng-model="data.pwd">
+             </label>
+            
+        </form>
+        
+         <button class="button button-stable button-block" style="border-radius:100px 100px 100px 100px;"  ng_click="login()" type="submit">Sign In</button>
+        
+        <a ui-sref="registrationForm" id="login-button8" style="border-radius:100px 100px 100px 100px;"  class="button button-stable  button-block">Sign Up</a>
+        
+    
+    </ion-content>
+</ion-view>

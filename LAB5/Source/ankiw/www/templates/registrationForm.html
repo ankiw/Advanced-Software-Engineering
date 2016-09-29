@@ -1,0 +1,18 @@
+<ion-view title="Registration Form" id="page2" style="background-color:#A7AFA5;">
+    <ion-content padding="true" class="has-header">
+        <form id="registrationForm-form2" class="list">
+            <ion-list id="registrationForm-list1">
+             <label class="item item-input">
+                <input type="text" id="name" class="form-control" placeholder="Enter name" required autofocus ng-model="name">
+             </label>
+                <label class="item item-input">
+                <input type="text" id="username" class="form-control" placeholder="Enter Username" required autofocus ng-model="data.uname">
+             </label>
+             <label class="item item-input">
+                <input type="password" id="password" class="form-control" placeholder="Enter Password" required autofocus ng-model="data.pwd">
+             </label>
+            </ion-list>
+            <a ui-sref="login" id="registrationForm-button9" style="border-radius:100px 100px 100px 100px;" class="button button-stable  button-block" ng-click="register()">Register</a>
+        </form>
+    </ion-content>
+</ion-view>
