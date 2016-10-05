@@ -6,3 +6,6 @@ LAB1- https://github.com/ankiw/Lab1-Assignment-ASE/wiki/Lab-Assignment-1
 LAB3-https://github.com/ankiw/Lab-Assignment-ASE/wiki/Lab-Assignment-3
 
 LAB4-https://github.com/ankiw/Lab-Assignment-ASE/wiki/Lab-Assignment-4
+
+
+LAB5-https://github.com/ankiw/Lab-Assignment-ASE/wiki/Lab-Assignment-5
