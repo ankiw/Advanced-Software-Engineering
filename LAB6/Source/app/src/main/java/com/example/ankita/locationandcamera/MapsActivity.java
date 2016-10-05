@@ -54,7 +54,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         @Override
     public void onMapReady(GoogleMap googleMap) {
         mMap = googleMap;
-            mMap.addMarker(new MarkerOptions().position(this.currentLatLng).title("you are here!!").snippet(this.address).icon(BitmapDescriptorFactory.fromBitmap(this.photo)));
+            mMap.addMarker(new MarkerOptions().position(this.currentLatLng).title("Your current Location is:").snippet(this.address).icon(BitmapDescriptorFactory.fromBitmap(this.photo)));
             mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(this.currentLatLng,7));
     }
 }
