@@ -7,27 +7,7 @@ app.get('/getdata', function (req, res) {
     };
 
     request('http://access.alchemyapi.com/calls/info/GetAPIKeyInfo?apikey=fcff12e9ce3b2504d329e67bc8dafb0861d1d812'+req.params.id, function (error,response,body) {
-        if(error){
-            return console.log('Error:', error);
-        }
-
-        if(response.statusCode !== 200){
-            return console.log('Invalid Status Code Returned:', response.statusCode);
-        }
-        body = JSON.parse(body);
-        var ven = body.response.venues;
-        for(var i=0;i<ven.length;i++)
-        {
-            result.venue.push({'name': ven[i].name,
-                'address':ven[i].location.formattedAddress.toString()});
-        }
-        res.contentType('application/json');
-        res.write(JSON.stringify(result));
-
-
-        request('https://api.uclassify.com/v1/uclassify/sentiment/Classify?readkey=MD03b83ppKsp&text=', function (error, response, body1) {
-
-            if (error) {
+        
                 return console.log('Error:', error);
             }
 
