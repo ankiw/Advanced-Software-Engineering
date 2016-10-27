@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Ankita's Mash up</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+    <link rel='icon' type='image/png' href='https://s3.amazonaws.com/alchemyapi/img/favicon.png' />
+    <link rel="stylesheet" href="css/reset.css" media="screen">
+    <link rel="stylesheet" href="css/style.css" media="screen">
+    <script src='https://code.responsivevoice.org/responsivevoice.js'></script>
+    <script src="js/TextToVoice.js"></script>
+</head>
+
+<style>
+    body {
+        background:url('http://fullhdpictures.com/wp-content/uploads/2016/01/Wonderful-Plain-Wallpaper.jpg');
+        font-family: 'Comic Sans MS', "Times New Roman";
+        text-align: center;
+        font-size: 100%;
+        line-height: normal;
+    }
+
+    header {
+        background-color: greenyellow;
+    }
+
+    h1 {
+        font-size: 10em;
+    }
+
+    h2 {
+        font-size: 1.5em;
+        color: black;
+    }
+
+    h3 {
+        line-height: 1.5em;
+    }
+
+    h4 {
+        font-weight: 100;
+        line-height: 1.4em;
+        color: #4b4b4b;
+        /*    color: #00ffb8;*/
+
+        letter-spacing: 2.5px;
+        padding-bottom: 15px;
+    }
+
+    p#footer {
+        font-size: .89em;
+        line-height: 1.25em;
+    }
+
+    #warning {
+        font-family: "helvetica";
+        font-weight: 100;
+        line-height: 1.5em;
+        padding-top: 55px;
+        font-size: medium;
+        color: #a7a7a7;
+    }
+
+    a {
+        /*  color: #00B7FF;*/
+
+        color: #00ffb8;
+    }
+
+    }
+
+    .result {
+        max-width: 85%;
+        padding: 100px 75px 0 75px;
+    }
+</style>
+<body>
+
+<header>
+    <div class='container'>
+
+        <div class='page-header'>
+            <h4>INTRODUCING THE APPLICATION THAT CAN EXTRACT POSITIVE/NEGATIVE SENTIMENT</h4>
+
+
+        </div>
+</header>
+
+<main>
+
+
+        <p align="center"> . </p>
+        <textarea id='userInput' placeholder="Paste text to run through sentiment alchemyAPI..."></textarea>
+
+        <p align="center">OR</p>
+        <textarea id='urlInput' placeholder="Paste URL of the webpage you want evaluated here for ex: http://www.bbc.com/news/health-37362341"></textarea>
+    <p>.</p>
+    <input type="submit" id="submitButton" value='Check it!'>
+    </div>
+
+
+    <div class="response">
+    </div>
+
+</main>
+
+
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.2.js"></script>
+<script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+
+<script src="app.js"></script>
+
+
+</body>
+
+</html>
