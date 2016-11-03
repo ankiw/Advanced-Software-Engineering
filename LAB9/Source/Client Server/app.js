@@ -167,3 +167,8 @@
     $(document).ready(main);
 
 }());
+
+function speakText()
+{
+    responsiveVoice.speak("You just said, "+final_transcript);
+}
